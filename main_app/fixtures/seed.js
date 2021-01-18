@@ -52,5 +52,5 @@
     "name": "Elgin Turner",
     "username": "Masta Killa",
     "email": "jameli@wutang.com"
-  },
+  }
 ]
