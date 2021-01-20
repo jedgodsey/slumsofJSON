@@ -7,8 +7,27 @@ def home(request):
     return render(request, 'home.html')
 
 def profiles(request):
-    print(request)
     return JsonResponse(all_users, safe=False)
+
+def new_profile(request):
+    print('here is the request: ', str(request))
+
+def show_profile(request):
+    return JsonResponse(all_users, safe=False)
+
+def edit_profile(request):
+    return JsonResponse(all_users, safe=False)
+
+def delete_profile(request):
+    return JsonResponse(all_users, safe=False)
+
+
+
+def posts(request):
+    return JsonResponse(all_posts, safe=False)
+
+def comments(request):
+    return JsonResponse(all_comments, safe=False)
 
 def seed(request):
     for profile in all_profiles:
