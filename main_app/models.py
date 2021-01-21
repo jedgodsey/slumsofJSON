@@ -19,3 +19,5 @@ class Comment(models.Model):
     body = models.TextField(max_length = 500)
     profile = models.ForeignKey(Profile, on_delete = models.CASCADE)
     post = models.ForeignKey(Post, on_delete = models.CASCADE)
+    def __str__(self):
+        return self.title
