@@ -13,9 +13,9 @@ def profiles(request):
     return HttpResponse(response, content_type='text/json')
 
 def new_profile(request):
-    print('in new_profile')
+    print(request)
     add_profile(json.loads(request.body))
-    return HttpResponse('safe at last')
+    return JsonResponse(request.body)
 
 def show_profile(request):
     return JsonResponse(all_profiles, safe=False)
