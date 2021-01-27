@@ -5,6 +5,8 @@ from .forms import ProfileForm, PostForm, CommentForm
 from .fixtures.seed import all_profiles, all_posts, all_comments
 import json
 
+from django.core import serializers
+
 def home(request):
     return render(request, 'home.html')
 
@@ -13,12 +15,19 @@ def profiles(request):
     return HttpResponse(response, content_type='text/json')
 
 def new_profile(request):
-    print(request)
     add_profile(json.loads(request.body))
-    return JsonResponse(request.body)
+    return HttpResponse(request.body, content_type='text/json')
 
-def show_profile(request):
-    return JsonResponse(all_profiles, safe=False)
+def show_profile(request, profile_id):
+    profile = Profile.objects.get(id=profile_id)
+    found_profile = {
+        'id': profile.id,
+        'name': profile.name,
+        'profile_name': profile.profile_name,
+        'email': profile.email
+    }
+    response = json.dumps(found_profile)
+    return HttpResponse(response, content_type='text/json')
 
 def edit_profile(request):
     return JsonResponse(all_profiles, safe=False)
@@ -44,7 +53,6 @@ def seed(request):
     return HttpResponse('database seeded')
 
 def add_profile(new_profile):
-    print('in add_profile')
     profile_instance = Profile.objects.create(**new_profile)
     profile_instance.save()
 
