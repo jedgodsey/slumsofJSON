@@ -9,24 +9,8 @@ def home(request):
     return render(request, 'home.html')
 
 def profiles(request):
-    profiles = Profile.objects.all()
-    form = ProfileForm()
-    context = {
-        'form': form,
-        'profiles': profiles
-    }
-    print(context)
-    # return JsonResponse(context, safe=False)
-    return HttpResponse(context)
-
-def city_index(request):
-    all_cities = City.objects.all()
-    form = CityForm()
-    context = {
-        'form' : form,
-        'cities': all_cities
-    }
-    return render(request,'cities/index.html',context)
+    response = json.dumps(list(Profile.objects.values()))
+    return HttpResponse(response, content_type='text/json')
 
 def new_profile(request):
     print('in new_profile')
