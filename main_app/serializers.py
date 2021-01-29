@@ -1,19 +1,17 @@
-# delete this page?
-# 
-from django import forms
-from .models import Profile, Post, Comment
+from rest_framework import serializers
+from models import Profile, Post, Comment
 
-class ProfileForm(forms.ModelForm):
+class ProfileSerializer(serializers.ModelSerializer):
     class Meta:      
         model = Profile
         fields = ("name", "profile_name", "email")
 
-class PostForm(forms.ModelForm):
+class PostSerializer(serializers.ModelSerializer):
     class Meta:
         model = Post
         fields = ("title","body","profile")
 
-class CommentForm(forms.ModelForm):
+class CommentSerializer(serializers.ModelSerializer):
     class Meta:
         model = Comment
         fields = ("title","body","profile", "post")
