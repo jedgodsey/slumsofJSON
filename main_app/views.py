@@ -7,8 +7,8 @@ import json
 
 from django.core import serializers
 
-# def home(request):
-#     return render(request, 'home.html')
+def home(request):
+    return render(request, 'home.html')
 
 # def profiles(request):
 #     response = json.dumps(list(Profile.objects.values()))

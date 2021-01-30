@@ -1,14 +1,8 @@
 from django.urls import path
 from . import views
 
-from rest_framework import routers
-from .api import ProfileViewSet, PostViewSet, CommentViewSet
-
-router = routers.DefaultRouter()
-router.register('api/profiles', ProfileViewSet, 'profiles')
-
 urlpatterns = [
-    # path('', views.home, name='home'),
+    path('', views.home, name='home'),
 
     # path('users/', views.profiles, name='users'),
     # path('users/new/', views.new_profile, name='new_profile'),
