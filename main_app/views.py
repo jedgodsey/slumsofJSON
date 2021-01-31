@@ -5,6 +5,9 @@ from .forms import ProfileForm, PostForm, CommentForm
 from .fixtures.seed import all_profiles, all_posts, all_comments
 import json
 
+from django.core.management.color import no_style
+from django.db import connection
+
 from django.core import serializers
 
 def home(request):
@@ -69,13 +72,19 @@ def comments(request):
     return JsonResponse(all_comments, safe=False)
 
 def seed(request):
+    Profile.objects.all().delete()
+    reset(Profile)
     for profile in all_profiles:
         add_profile(profile)
+    Post.objects.all().delete()
+    reset(Post)
     for post in all_posts:
         add_post(post)
+    Comment.objects.all().delete()
+    reset(Comment)
     for comment in all_comments:
         add_comment(comment)
-    return HttpResponse('database seeded')
+    return HttpResponse('database cleared and seeded')
 
 def add_profile(new_profile):
     profile_instance = Profile.objects.create(**new_profile)
@@ -88,3 +97,9 @@ def add_post(new_post):
 def add_comment(new_comment):
     comment_instance = Comment.objects.create(**new_comment)
     comment_instance.save()
+
+def reset(table):
+    sequence_sql = connection.ops.sequence_reset_sql(no_style(), [table])
+    with connection.cursor() as cursor:
+        for sql in sequence_sql:
+            cursor.execute(sql)
