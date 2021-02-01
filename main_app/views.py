@@ -59,12 +59,6 @@ def home(request):
 #     return HttpResponse('step two')
 #############################
 
-
-def delete_profile(request):
-    return JsonResponse(all_profiles, safe=False)
-
-
-
 def posts(request):
     return JsonResponse(all_posts, safe=False)
 
