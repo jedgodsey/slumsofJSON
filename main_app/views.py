@@ -91,10 +91,16 @@ def add_profile(new_profile):
     profile_instance.save()
 
 def add_post(new_post):
+    found_profile = Profile.objects.get(id=new_post['profile'])
+    new_post['profile'] = found_profile
     post_instance = Post.objects.create(**new_post)
     post_instance.save()
 
 def add_comment(new_comment):
+    found_profile = Profile.objects.get(id=new_comment['profile'])
+    found_post = Post.objects.get(id=new_comment['post'])
+    new_comment['profile'] = found_profile
+    new_comment['post'] = found_post
     comment_instance = Comment.objects.create(**new_comment)
     comment_instance.save()
 
