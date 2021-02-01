@@ -1,0 +1,202 @@
+[
+    {
+        "model": "main_app.Comment",
+        "pk": 1,
+        "fields": {
+            "title": "famous dart",
+            "body": "Ghostface catch the blast of a hype verse My Glock burst, leave in a hearse, I did worse I come rough, tough like an elephant tusk Your head rush, fly like Egyptian musk Aww shit, Wu-Tang Clan spark the wicks, an' However I master the trick just like Nixon Causin' terror, quick damage your whole era Hard rocks is locked the fuck up, or found shot P.L.O. style, hazardous, 'cause I wreck this dangerous I blow sparks like Waco, Texas",
+            "profile": 6,
+            "post": 1
+        }
+    },
+    {
+        "model": "main_app.Comment",
+        "pk": 2,
+        "fields": {
+            "title": "Best to watch his front",
+            "body": "I watch my back like I'm locked down Hardcore-hittin' sound Watch me act bugged and tear down Illiterate-type asshole, songs goin' gold No doubt, and you watch a corny nigga fold Yeah, they fake and all that, carryin' gats But yo, my Clan rollin' like forty macks Now you act convinced, I guess it makes sense Wu-Tang, yo, soooo represent! I wait for one to act up, now I got him backed up Gun to his neck now, react what? And that's one in the chamber, Wu-Tang banger 36 styles of danger",
+            "profile": 5,
+            "post": 2
+        }
+    },
+    {
+        "model": "main_app.Comment",
+        "pk": 3,
+        "fields": {
+            "title": "George C. Scott",
+            "body": "I rip it, hardcore like porno-flick bitches I roll with groups of ghetto bastards with biscuits Check it, my method on the microphone's bangin' Wu-Tang slang'll leave your headpiece hangin' Bust this, I'm kickin' like Seagal: Out for Justice The roughness, yes, the rudeness, ruckus Redrum, I verbally assault with the tongue Murder One, my style shocks your knot like a stun gun I'm hectic, I wreck it with the quickness Set it on the microphone, and competition get blown By this nasty-ass nigga with my nigga, the RZA Charged like a bull and got pulled like a trigga So bad, stabbin' up the pad with the vocab, crab I scream on your ass like your dad, bring it on...",
+            "profile": 7,
+            "post": 3
+        }
+    },
+    {
+        "model": "main_app.Comment",
+        "pk": 4,
+        "fields": {
+            "title": "Margaret Thatcher",
+            "body": "Yo, I'm more rugged than slave man boots New recruits, I'm fuckin' up MC troops I break loose, and trample shit, while I stomp A mudhole in that ass 'cause I'm straight out the swamp Creepin' up on site, now it's Fright Night My Wu-Tang slang is mad fuckin' dangerous And more deadly than the stroke of an axe Choppin' through your back *swish* Givin' bystanders heart attacks Niggas try to flip, tell me, who is him? I blow up his fuckin' prism, make it a vicious act of terrorism You wanna bring it, so fuck it, come on and bring the ruckus! And I provoke niggas to kick buckets I'm wettin' cream, I ain't wettin' fame Who sellin' 'caine? I'm givin' out a deadly game It's not the Russian, it's the Wu-Tang crushin' roulette Slip up and get fucked like Suzette Bring da fuckin' ruckus!",
+            "profile": 2,
+            "post": 4
+        }
+    },
+    {
+        "model": "main_app.Comment",
+        "pk": 5,
+        "fields": {
+            "title": "Cypress Hill",
+            "body": "Yo RZA, yo razor, hit me with the major The damage, my clan understand it, be flavor Gunnin', hummin', comin' at ya First I'm gonna get ya, once I got ya, I gat ya You could never capture the Method Man's stature For rhyme and for rapture, got niggas resignin', now master My style? Never! I put the fuckin' buck in the wild, kid, I'm terror, razor-sharp I sever, the head from the shoulders, I'm better than my competta You mean competitor, whatever, let's get together",
+            "profile": 4,
+            "post": 5
+        }
+    },
+    {
+        "model": "main_app.Comment",
+        "pk": 6,
+        "fields": {
+            "title": "Fat Joe",
+            "body": "I react so thick, I'm phat, and yo Rae came blowin' and blew off your headphones, black Rap from, yo, Cali to Texas Smoother than a Lexus, now's my turn to wreck this Brothers approach and half step But ain't heard half of it yet and I bet you're not a fuckin' vet So, when you see me on the real Formin' like Voltron, remember I got deep like a Navy Seal",
+            "profile": 5,
+            "post": 6
+        }
+    },
+    {
+        "model": "main_app.Comment",
+        "pk": 7,
+        "fields": {
+            "title": "Heath Ledger",
+            "body": "Yo! I come with that ol' loco style from my vocal Couldn't peep it with a pair of bifocals I'm no joker, play me as a joker Be on you like a house on fire, smoke ya Crews be actin' like they gangs, anyway Be like, 'Warriors, come out and play!' Burn me, I get into shit, I let it out like diarrhea Got burnt once but that was only gonorrhea Dirty, I keep shit stains in my drawers So I can get fizza-funky for ya Murder, taste the flame of the Wu-Tang Rah! Here comes the Tiger vs. Crane I'll be like wild with my style Punk, you play me, chump, you get jumped Wu is comin' through at a theater near you And get funk like a shoe, what?",
+            "profile": 3,
+            "post": 7
+        }
+    },
+    {
+        "model": "main_app.Comment",
+        "pk": 8,
+        "fields": {
+            "title": "Maureen O'Hara",
+            "body": "The Wu is comin' through, the outcome is critical Fuckin' with my style is sort of like a miracle On 34th Street, in the Square of Herald I gamed Ella, the bitch caught a Fitz like Gerald- -ine Ferraro, who's full of sorrow 'Cause the ho didn't win, but the sun will still come out tomorrow And shine shine shine like gold mine Here comes the drunk monk, with a quart of Ballantine Pass the bone, kid, pass the bone! Let's get on this mission like Indiana Jones The GZA, one who just represent the Wu-Tang clique With the game and soul of an old school flick Like the Mack and Dolemite, who both did bids Claudine went to Cooley High and had mad kids So stop, the life you save may be your motherfuckin' own I'll hang your ass with this microphone Make way for the merge of traffic Wu-Tang's comin' through with full metal jackets God squad that's mad hard to serve Come frontin' hard, then Bernhard Goetz what he deserves",
+            "profile": 2,
+            "post": 8
+        }
+    },
+    {
+        "model": "main_app.Comment",
+        "pk": 9,
+        "fields": {
+            "title": "Stone IPA",
+            "body": "Champion gear that I rock, you get your boots knocked Then attack you like a pit, then lock shit down As I come and freaks the sound Hardcore, but givin' you more and more like 'Ding!' Nah, shorty, get you open like six packs Killa Beez attack, flippin' what? Murder one phat tracks, aight? I kick it like a Nike Flight Word life, I get that ass robbed on spite Check the method from Bedrock, 'cause I rock your head to bed Just like rockin' what? Twin Glocks! Shake the ground while my beats just break you down Raw sound, goin' to war right now So, yo, bombin', We Usually Take All Niggas Garments Save your breath before I vomit",
+            "profile": 5,
+            "post": 9
+        }
+    },
+    {
+        "model": "main_app.Comment",
+        "pk": 10,
+        "fields": {
+            "title": "Arafat",
+            "body": "I be that insane nigga from the psycho ward I'm on the trigger, plus I got the Wu-Tang sword So how you figure, that you can even fuck with mine? Hey, yo, RZA! Hit me with that shit one time! And pull a foul, niggas, save the beef for the cow I'm milkin' this ho, this is my show, Tical! The fuck you wanna do on this mic piece, duke? I'm like a sniper, hyper off the ginseng root PLO Style, buddha monks with the owls Now who's the fuckin' man? Meth-Tical",
+            "profile": 4,
+            "post": 10
+        }
+    },
+    {
+        "model": "main_app.Comment",
+        "pk": 11,
+        "fields": {
+            "title": "Nation of Gods and Earths",
+            "body": "I leave the mic in body bags, my rap style has the force To leave you lost like the Tribe of Shabazz Murderous material made by a madman It's the mic wrecker, Inspectah, bad man From the bad lands of the Killa Rap fanatic representin' with the skill that's iller Dare to compare, get pierced just like your ear The Shooby Doo-Wop pop, strictly hardware Armed and geared 'cause I just broke out the prison Charged by the system for murderin' the rhythm Now lo and behold another deadly episode Bound to catch another fuckin' charge when I explode",
+            "profile": 7,
+            "post": 11
+        }
+    },
+    {
+        "model": "main_app.Comment",
+        "pk": 12,
+        "fields": {
+            "title": "Goldfinger",
+            "body": "Slammin' a hype-ass verse 'til your head burst I ramshack dead in the track and that's that Rap assassin, fast and quick to blast and hardrock I ran up in spots like Fort Knox I'm hot, top notch, Ghost thinks with logic Flashbacks how I attacked your whole project I'm raw, I'm rugged and raw, I repeat If I die, my seed'll be ill like me Approachin' me, yo, out of respect, chops to neck I get vexed, like crashin' up a phat-ass Lex So, clear the way! Make way! Yo, open the cage! Peace, I'm out, jettin' like a runaway slave",
+            "profile": 6,
+            "post": 12
+        }
+    },
+    {
+        "model": "main_app.Comment",
+        "pk": 13,
+        "fields": {
+            "title": "Fertile",
+            "body": "You gettin' stripped from your garments, boy, run your jewels All the meth got me open like fallopian tubes I bring death to a snake when he least expect Ain't a damn thing changed, boy, Protect Ya Neck! Ruler Zig-Zag-Zig Allah, jam is fatal Quick to stick my Wu-Tang sword right through your navel Suspenseful force bein' brought through my utensil The pencil, I bring strong winds up against you Havoc, then run up through your county like the Maverick Caps through the tablets, I gots to make the fabrics",
+            "profile": 1,
+            "post": 13
+        }
+    },
+    {
+        "model": "main_app.Comment",
+        "pk": 14,
+        "fields": {
+            "title": "Bushido",
+            "body": "A-a-a-ah-ah, are you a warrior, killer? Slicin' shit like a samurai? The Ol' Dirty Bastard from the bar! Ol' Dirty clan of terrorists Comin' at your ass like a sorceress, shootin' that piss Niggas be gettin' on my fuckin' nerves Rhymes they be kickin' make me wanna kick their fuckin' ass to the curb Boy got funky fresh like the Old Specialist A carrier, messenger, bury ya This experience is for the whole experience Let it be applied, Unique drop that science",
+            "profile": 3,
+            "post": 1
+        }
+    },
+    {
+        "model": "main_app.Comment",
+        "pk": 15,
+        "fields": {
+            "title": "Vincent Van Gogh",
+            "body": "My-My-My-My clan is thick like plaster, bust ya, slash ya Slit a nigga back like a Dutch Master Killer, style jumped off in Killa Hilla I was the thriller in the Ali-Frazier Manila I came down with phat tracks that combine and interlock Like gettin' smashed by a cinder block Bow! Now it's all over Niggas seein' pink hearts, yellow moons Orange stars and green clovers",
+            "profile": 2,
+            "post": 2
+        }
+    },
+    {
+        "model": "main_app.Comment",
+        "pk": 16,
+        "fields": {
+            "title": "Staten Island",
+            "body": "Started off on the island, aka Shaolin Niggas wilin', gun shots thrown, the phone diallin' Back in the days, I'm 8 now Makin' a tape now, Rae gotta get a plate now Ignorant and mad young, wanted to be the one 'Til I got (Blaow! Blaow! Blaow!) felt one Yeah, my pops was a fiend since 16 Shootin' that 'that's that shit!' in his blood stream That's the life of a grimy, real-life crimey And niggas know that habit's behind me Day one, yo, growin' all up in the ghetto Now I'm a weed fiend jettin' to Palmetto In Medina, yo, no doubt, the god got crazy clout Pushin' the big joint from down South So if you're filthy stacked up, better watch your back and duck 'Cause these fiends, they got it cracked up Now my man from up North, now he got the loft It's solid as a rock and crazy salt No jokes, I'm not playin', get his folks Desert Eagle his dick and put him in a yoke And to know for sure, I got reck and rip shop I pointed a gat at his mother's knot (Yo, Rae, don't do that shit, man! Don't do that shit!) Fuck that!",
+            "profile": 5,
+            "post": 3
+        }
+    },
+    {
+        "model": "main_app.Comment",
+        "pk": 17,
+        "fields": {
+            "title": "Conspiracy",
+            "body": "Kickin' the fly clichés, doin' duets with Rae and A Happens to make my day Though I'm tired of bustin' off shots, havin' to rock knots Runnin' up in spots and makin' shit hot I'd rather flip shows instead of those Hangin' on my livin' room wall, my first joint and it went gold! I want to lamp, I want to be in the shade Plus the spotlight, gettin' my dick rode all night I want to have me a phat yacht And enough land to go and plant my own sess crops But for now it's just a big dream 'Cause I find myself in a place where I'm last seen My thoughts must be relaxed, be able to maintain 'Cause times is changed and life is strange The glorious days is gone and everybody's doin' bad Yo, mad lives is up for grabs Brothers passin' away, I gotta make wakes Receivin' all types of calls from Upstate Yo, I can't cope with the pressure, settlin' for lesser The God left lessons on my dresser So I can bloom and blossom, find a new way To continue to make more hits with Rae and A Sunshine plays a major part in the daytime (Peace to mankind, Ghostface carry a black 9, nigga) Word up, it's all like that… yeah",
+            "profile": 6,
+            "post": 4
+        }
+    },
+    {
+        "model": "main_app.Comment",
+        "pk": 18,
+        "fields": {
+            "title": "UNLV",
+            "body": "It's like this, I'ma start from the top Inspectah Deck, he's like He's like that dude that'll sit back and watch you Play yourself and all that, right? And see you sit there and know you lyin' And he'll take you to court after that 'Cause he the Inspectah, that's why he the and And also he the Rebel I.N.S You know what I'm sayin'? And Shallah Raekwon, he the Chef He cookin' up some marvelous shit to get your mouth waterin' On some 'oh shit' Then, then it's, then it's the Method Man It's like mad different methods to the way I do my shit",
+            "profile": 4,
+            "post": 5
+        }
+    },
+    {
+        "model": "main_app.Comment",
+        "pk": 19,
+        "fields": {
+            "title": "Justice",
+            "body": "It's been twenty-two long hard years, I'm still strugglin' Survival got me buggin', but I'm alive on arrival I peep at the shape of the streets And stay awake to the ways of the world 'cause shit is deep A man with a dream with plans to make cream Which failed; I went to jail at the age of fifteen A young buck sellin' drugs and such, who never had much Tryin' to get a clutch at what I could not touch The court played me short, now I face incarceration Pacin', goin' upstate's my destination Handcuffed in back of a bus, forty of us Life as a shorty shouldn't be so rough But as the world turned I learned life is hell Livin' in the world no different from a cell Every day I escape from Jakes givin' chase Sellin' base, smokin' bones in the staircase Though I don't know why I chose to smoke sess I guess that's the time when I'm not depressed But I'm still depressed, and I ask: what's it worth? Ready to give up so I seek the old Earth Who explained workin' hard may help you maintain To learn to overcome the heartaches and pain We got stick-up kids, corrupt cops, and crack rocks And stray shots, all on the block that stays hot Leave it up to me while I be livin' proof To kick the truth to the young black youth But shorty's runnin' wild, smokin' sess, drinkin' beer And ain't tryin' to hear what I'm kickin' in his ear Neglected for now, but yo, it gots to be accepted That what? That life is hectic",
+            "profile": 7,
+            "post": 6
+        }
+    },
+    {
+        "model": "main_app.Comment",
+        "pk": 20,
+        "fields": {
+            "title": "Do you know where your child is?",
+            "body": "Yo, chill with the feedback, black, we don't need that It's 10 o'clock, ho, where the fuck's your seed at? Feelin' mad hostile, ran the apostle Flowin' like Christ when I speaks the gospel Stroll with the holy roll, then attack the globe with the buckus style The ruckus, ten times ten men committin' mad sin Turn the other cheek and I'll break your fuckin' chin Slayin' boom-bangs like African drums, we'll be Comin' around the mountain when I come Crazy flamboyant for the rap enjoyment My clan increase like black unemployment Yeah, another one dare, G-Gka-Genius Take us the fuck outta here",
+            "profile": 1,
+            "post": 7
+        }
+    }
+]

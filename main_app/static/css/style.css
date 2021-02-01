@@ -6,6 +6,7 @@ body {
 
 main {
   flex: 1 0 auto;
+  max-width: 56rem;
 }
 
 footer {
@@ -20,4 +21,9 @@ footer {
 
 .page-footer {
   background-color: black;
+}
+
+h1 {
+  font-family: 'Ceviche One', cursive;
+  font-size: 7rem;
 }

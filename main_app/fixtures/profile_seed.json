@@ -1,0 +1,83 @@
+[
+    {
+        "model": "main_app.Profile",
+        "pk": 1,
+        "fields": {
+            "name": "Robert Fitzgerald Diggs",
+            "profile_name": "RZA",
+            "email": "abbotofthewu@wutang.com"
+        }
+    },
+    {
+        "model": "main_app.Profile",
+        "pk": 2,
+        "fields": {
+            "name": "Gary Earl Grice",
+            "profile_name": "GZA",
+            "email": "thegenius@wutang.com"
+        }
+    },
+    {
+        "model": "main_app.Profile",
+        "pk": 3,
+        "fields": {
+            "name": "Russell Tyrone Jones",
+            "profile_name": "Ol' Dirty Bastard",
+            "email": "likeitraw@wutang.com"
+        }
+    },
+    {
+        "model": "main_app.Profile",
+        "pk": 4,
+        "fields": {
+            "name": "Clifford Smith Jr.",
+            "profile_name": "Method Man",
+            "email": "cheese@wutang.com"
+        }
+    },
+    {
+        "model": "main_app.Profile",
+        "pk": 5,
+        "fields": {
+            "name": "Corey Woods",
+            "profile_name": "Raekwon",
+            "email": "thechef@wutang.com"
+        }
+    },
+    {
+        "model": "main_app.Profile",
+        "pk": 6,
+        "fields": {
+            "name": "Dennis David Coles",
+            "profile_name": "Ghostface Killah",
+            "email": "tonystarks@wutang.com"
+        }
+    },
+    {
+        "model": "main_app.Profile",
+        "pk": 7,
+        "fields": {
+            "name": "Jason Richard Hunter",
+            "profile_name": "Inspectah Deck",
+            "email": "fifthbrother@wutang.com"
+        }
+    },
+    {
+        "model": "main_app.Profile",
+        "pk": 8,
+        "fields": {
+            "name": "Lamont Jody Hawkins",
+            "profile_name": "U-God",
+            "email": "goldenarms@wutang.com"
+        }
+    },
+    {
+        "model": "main_app.Profile",
+        "pk": 9,
+        "fields": {
+            "name": "Elgin Turner",
+            "profile_name": "Masta Killa",
+            "email": "jameli@wutang.com"
+        }
+    }
+]
