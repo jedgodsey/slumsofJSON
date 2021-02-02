@@ -2,6 +2,7 @@ body {
     display: flex;
     min-height: 100vh;
     flex-direction: column;
+    font-size: 20px;
 }
 
 a {
@@ -9,18 +10,31 @@ a {
   background-color: rgb(255,209,0);
 }
 
+a:hover {
+  color: rgb(255,209,0);
+  background-color: black;
+}
 .highlight {
   color: rgb(255, 209, 0)
 }
 
-main {
-  flex: 1 0 auto;
-  max-width: 56rem;
+.container {
+  max-width: 50%;
 }
 
 footer {
   padding-top: 0;
   text-align: right;
+  /* height: 30px; */
+}
+
+.page-footer {
+  height: 50px;
+  padding-top: 10px;
+}
+
+h5 {
+  margin-block-start: 0em;
 }
 
 nav {
@@ -36,8 +50,13 @@ nav {
 h1 {
   font-family: 'Ceviche One', cursive;
   font-size: 7rem;
+  color: black;
 }
 
 .logo {
   height: 95px;
+}
+
+.spacer {
+  height: 30px;
 }

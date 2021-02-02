@@ -3,64 +3,80 @@
 
 <h1>from the slums of JSON</h1>
 <h3>A testing API inspired by the Wu-Tang Clan<span class="highlight">*</span></h3>
-<p>https://prismjs.com/</p>
-<p>scheduling: https://mattsegal.dev/simple-scheduled-tasks.html</p>
 
-Try it
-Run this code here, in a console or from any site:
+<p>From the Slums of JSON is a real REST API that anyone can use for prototyping or testing.  Rather than some gibberish pseudo-latin, it features the words and wisdom of the Wu-Tang Clan.</p>
 
-fetch('https://jsonplaceholder.typicode.com/todos/1')
-  .then(response => response.json())
-  .then(json => console.log(json))
-Run script
-{}
+<p>Yes, unlike the other services that we are shamelessly ripping off, this API is actually real.  When you POST, PUT, PATCH or DELETE you are actually changing the databse.  If for any reason you'd like to start over with new data, simply refresh or revisit this page in your browser to wipe and re-seed the database.</p>
 
-ads via Carbon
-StackPulse is the future of running reliable software in production. Try it for free!
-ADS VIA CARBON
-When to use
-JSONPlaceholder is a free online REST API that you can use whenever you need some fake data. It can be in a README on GitHub, for a demo on CodeSandbox, in code examples on Stack Overflow, ...or simply to test things locally.
+<div class="spacer"></div>
 
-Resources
-JSONPlaceholder comes with a set of 6 common resources:
-
-{% comment %} <a href="http://localhost:8000/api/posts/"> /posts </a>	13 posts
-<a href="http://localhost:8000/api/posts/"> /comments </a>	20 comments
-<a href="http://localhost:8000/api/posts/"> /users </a>	9 users {% endcomment %}
+<h4>Resources</h4>
 <table>
-<thead>
-<tr>
-<th></th>
-<th></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td><a href="http://localhost:8000/api/posts/">/posts</a></td>
-<td>13 posts</td>
-</tr>
-<tr>
-<td><a href="http://localhost:8000/api/comments/">/comments</a></td>
-<td>20 comments</td>
-</tr>
-<tr>
-<td><a href="http://localhost:8000/api/users/">/users</a></td>
-<td>9 users</td>
-</tr>
-</tbody>
+    <thead>
+        From the Slums of JSON currently has the three resources most common to a simple blog and we are working to add more. The resources themselves are related to each other, with each user potentially having several posts and comments and each post potentiall having several comments.
+        <tr>
+        <th></th>
+        <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><a href="http://localhost:8000/api/posts/">&nbsp/posts&nbsp</a></td>
+            <td>13 posts</td>
+        </tr>
+        <tr>
+            <td><a href="http://localhost:8000/api/comments/">&nbsp/comments&nbsp</a></td>
+            <td>20 comments</td>
+        </tr>
+        <tr>
+            <td><a href="http://localhost:8000/api/users/">&nbsp/users&nbsp</a></td>
+            <td>9 users</td>
+        </tr>
+    </tbody>
 </table>
-Note: resources have relations. For example: posts have many comments, albums have many photos, ... see guide for the full list.
 
-Routes
-All HTTP methods are supported. You can use http or https for your requests.
+<div class="spacer"></div>
 
-GET	/posts
-GET	/posts/1
-GET	/posts/1/comments
-GET	/comments?postId=1
-POST	/posts
-PUT	/posts/1
-PATCH	/posts/1
-DELETE	/posts/1
+<h4>Routes</h4>
+<table>
+    <thead>
+        Feel free to use all standard http methods
+        <tr>
+            <th></th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td>GET</td>
+            <td><a href="/posts">/posts</a></td>
+        </tr>
+        <tr>
+            <td>GET</td>
+            <td><a href="/posts/1">/posts/1</a></td>
+        </tr>
+        <tr>
+            <td>POST</td>
+            <td>/posts</td>
+        </tr>
+        <tr>
+            <td>PUT</td>
+            <td>/posts/1</td>
+        </tr>
+        <tr>
+            <td>PATCH</td>
+            <td>/posts/1</td>
+        </tr>
+        <tr>
+            <td>DELETE</td>
+            <td>/posts/1</td>
+        </tr>
+    </tbody>
+</table>
+
+<div class="spacer"></div>
 
 {% endblock %}
+
+<p>https://prismjs.com/</p>
+<p>scheduling: https://mattsegal.dev/simple-scheduled-tasks.html</p>
