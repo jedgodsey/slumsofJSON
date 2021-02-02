@@ -2,8 +2,65 @@
 {% block content %}
 
 <h1>from the slums of JSON</h1>
-<h3>A testing API inspired by the Wu-Tang Clan*</h3>
+<h3>A testing API inspired by the Wu-Tang Clan<span class="highlight">*</span></h3>
 <p>https://prismjs.com/</p>
 <p>scheduling: https://mattsegal.dev/simple-scheduled-tasks.html</p>
+
+Try it
+Run this code here, in a console or from any site:
+
+fetch('https://jsonplaceholder.typicode.com/todos/1')
+  .then(response => response.json())
+  .then(json => console.log(json))
+Run script
+{}
+
+ads via Carbon
+StackPulse is the future of running reliable software in production. Try it for free!
+ADS VIA CARBON
+When to use
+JSONPlaceholder is a free online REST API that you can use whenever you need some fake data. It can be in a README on GitHub, for a demo on CodeSandbox, in code examples on Stack Overflow, ...or simply to test things locally.
+
+Resources
+JSONPlaceholder comes with a set of 6 common resources:
+
+{% comment %} <a href="http://localhost:8000/api/posts/"> /posts </a>	13 posts
+<a href="http://localhost:8000/api/posts/"> /comments </a>	20 comments
+<a href="http://localhost:8000/api/posts/"> /users </a>	9 users {% endcomment %}
+<table>
+<thead>
+<tr>
+<th></th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><a href="http://localhost:8000/api/posts/">/posts</a></td>
+<td>13 posts</td>
+</tr>
+<tr>
+<td><a href="http://localhost:8000/api/comments/">/comments</a></td>
+<td>20 comments</td>
+</tr>
+<tr>
+<td><a href="http://localhost:8000/api/users/">/users</a></td>
+<td>9 users</td>
+</tr>
+</tbody>
+</table>
+Note: resources have relations. For example: posts have many comments, albums have many photos, ... see guide for the full list.
+
+Routes
+All HTTP methods are supported. You can use http or https for your requests.
+
+GET	/posts
+GET	/posts/1
+GET	/posts/1/comments
+GET	/comments?postId=1
+POST	/posts
+PUT	/posts/1
+PATCH	/posts/1
+DELETE	/posts/1
 
 {% endblock %}

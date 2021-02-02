@@ -10,13 +10,13 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Ceviche+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.21.0/themes/prism-tomorrow.min.css" />
   <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
 </head>
 <body>
   <header>
     <nav>
-      <div class="nav-wrapper">
-      </div>
+      &nbsp&nbsp&nbsp&nbsp<img src="/static/images/logo_yellow.svg" class="logo">
     </nav>
   </header>
   <main class="container">
@@ -24,7 +24,9 @@
     {% endblock %}
   </main>
   <footer class="page-footer">
-    *This site is site is a tribute to the Wu-Tang Clan and is in no way affiliated with them. You can visit their official site <a href="https://wutangclan.com/">here.</a>&nbsp&nbsp&nbsp&nbsp
+    <h5><span class="highlight">*</span>This site is site is a tribute to the Wu-Tang Clan and is in no way affiliated with them. You can visit their official site <a href="https://wutangclan.com/">&nbsp here. </a>&nbsp&nbsp&nbsp&nbsp</h5>
   </footer>
+  <script src="https://myCDN.com/prism@v1.x/components/prism-core.min.js"></script>
+	<script src="https://myCDN.com/prism@v1.x/plugins/autoloader/prism-autoloader.min.js"></script>
 </body>
 </html>
