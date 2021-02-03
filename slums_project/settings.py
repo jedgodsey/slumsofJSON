@@ -128,6 +128,8 @@ REST_FRAMEWORK = {
     ]
 }
 
+X_FRAME_OPTIONS = 'SAMEORIGIN'
+
 Q_CLUSTER = {
     "name": "slums",
     "orm": "default", 
