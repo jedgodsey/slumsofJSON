@@ -1,8 +1,10 @@
 {% extends 'base.html' %}
 {% block content %}
 
-<h1>from the slums of JSON</h1>
-<h3>A testing API inspired by the Wu-Tang Clan<span class="highlight">*</span></h3>
+<div id="asterisk-hover">
+    <h1>from the slums of JSON</h1>
+    <h3>A testing API inspired by the Wu-Tang Clan<a href="#disclaimer"><span id="asterisk">*</span></a></h3>
+</div>
 
 <p>From the Slums of JSON is a real REST API that anyone can use for prototyping or testing.  Rather than some gibberish pseudo-latin, it features the words and wisdom of the Wu-Tang Clan.</p>
 
@@ -21,15 +23,15 @@
     </thead>
     <tbody>
         <tr>
-            <td><a href="http://localhost:8000/api/posts/">&nbsp/posts&nbsp</a></td>
+            <td><a href="http://localhost:8000/api/posts/" class="link">&nbsp/posts&nbsp</a></td>
             <td>13 posts</td>
         </tr>
         <tr>
-            <td><a href="http://localhost:8000/api/comments/">&nbsp/comments&nbsp</a></td>
+            <td><a href="http://localhost:8000/api/comments/" class="link">&nbsp/comments&nbsp</a></td>
             <td>20 comments</td>
         </tr>
         <tr>
-            <td><a href="http://localhost:8000/api/users/">&nbsp/users&nbsp</a></td>
+            <td><a href="http://localhost:8000/api/users/" class="link">&nbsp/users&nbsp</a></td>
             <td>9 users</td>
         </tr>
     </tbody>
@@ -42,18 +44,18 @@
     <thead>
         Feel free to use all standard http methods
         <tr>
-            <th></th>
-            <th></th>
+            <td><h5>METHOD</h5></td>
+            <td><h5>ROUTE STYLE</h5></td>
         </tr>
     </thead>
     <tbody>
         <tr>
             <td>GET</td>
-            <td><a href="/posts">/posts</a></td>
+            <td><a href="/posts" class="link">/posts</a></td>
         </tr>
         <tr>
             <td>GET</td>
-            <td><a href="/posts/1">/posts/1</a></td>
+            <td><a href="/posts/1" class="link">/posts/1</a></td>
         </tr>
         <tr>
             <td>POST</td>
@@ -77,7 +79,27 @@
 <div class="spacer"></div>
 
 <h4>Test It Out</h4>
-<iframe id="encoder_iframe" height='75%' width="100%" src="http://localhost:8000/api/users/"></iframe>
+
+<div class="path-parameters">
+    <input type="text" class="input" name="url" id="url" value="http://localhost:8000/api" />
+    <input type="text" class="input" name="resource" id="resource" value="users" />
+    <input type="text" class="input" name="id" id="id" value="1" />
+    <h5 class="link" onClick="LoadURL();" >&nbsp request &nbsp</h5>
+</div>
+<span id="endpoint"></span>
+<iframe id="my_frame" height='75%' width="100%" src="http://localhost:8000/api/users/"></iframe>       
+<script type="text/javascript">
+    function LoadURL(){
+        let url = document.getElementById("url").value
+        let resource = document.getElementById("resource").value
+        let id = document.getElementById("id").value
+        let last = id ? "/" : ''
+        let path = url + "/" + resource + "/" + id + last
+        let endpoint = `Results from  your endpoint ${path}`
+        document.getElementById("endpoint").innerText=endpoint
+        document.getElementById("my_frame").src=path
+    }
+</script>
 
 <div class="spacer"></div>
 

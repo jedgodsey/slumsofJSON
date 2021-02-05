@@ -5,12 +5,12 @@ body {
     font-size: 20px;
 }
 
-a {
+.link {
   color: black;
   background-color: rgb(255,209,0);
 }
 
-a:hover {
+.link:hover {
   color: rgb(255,209,0);
   background-color: black;
 }
@@ -59,4 +59,20 @@ h1 {
 
 .spacer {
   height: 30px;
+}
+
+#asterisk {
+  color: black;
+}
+#asterisk-hover:hover #asterisk {
+  color: rgb(255,209,0);
+}
+
+.path-parameters {
+  display: flex;
+  flex-direction: row;
+}
+
+.input {
+  width: 200px;
 }
