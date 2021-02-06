@@ -37,7 +37,7 @@ From the Slums of JSON currently has the three resources most common to a simple
 <h4>Routes</h4>
 <table>
     <thead>
-        Feel free to use all standard http methods
+        Feel free to use all standard http methods.
         <div class="spacer"></div>
         <tr>
             <td><h5>METHOD</h5></td>
@@ -47,11 +47,11 @@ From the Slums of JSON currently has the three resources most common to a simple
     <tbody>
         <tr>
             <td>GET</td>
-            <td><a href="/posts" class="link">/posts</a></td>
+            <td>/posts</td>
         </tr>
         <tr>
             <td>GET</td>
-            <td><a href="/posts/1" class="link">/posts/1</a></td>
+            <td>/posts/1</td>
         </tr>
         <tr>
             <td>POST</td>
@@ -75,7 +75,7 @@ From the Slums of JSON currently has the three resources most common to a simple
 <div class="spacer"></div>
 
 <h4>Test It Out</h4>
-Simply fill in the form with a resource and (if necessary) an id number and click "request" to see your response.  You'll also see the resulting endpoint used, which you can plug directly into your own application.  Want to test out your own API? Simply change the url in the form to you your own and get a response in the same way.
+Fill in the form with a resource and (if necessary) an id number and click "request" to see your response.  You'll also see the resulting endpoint used, which you can plug directly into your own application.  When you've got your frontend working with our API, just swap out our url for your own. Want to test out your own API? Simply change the url in the form to you your own and get a response in the same way.
 <div class="spacer"></div>
 <div id="request">
     <div class="path-parameters">
@@ -95,7 +95,7 @@ Simply fill in the form with a resource and (if necessary) an id number and clic
         </div>
         <div class="input-box">
             <h5>RESOURCE</h5>
-            <input type="text" class="input" name="resource" id="resource" value="users" style="width:95px" />
+            <input type="text" class="input" name="resource" id="resource" value="users" style="width:120px" />
         </div>
         <div class="input-box">
             <h5>ID</h5>
@@ -107,9 +107,18 @@ Simply fill in the form with a resource and (if necessary) an id number and clic
         </div>
     </div>
 </div>
-<span id="endpoint"></span>
-<div class="spacer"></div>
-<iframe id="my_frame" width="100%" src="http://localhost:8000/api/users/"></iframe>       
+<div id="endpoint-space">
+    <div id="endpoint"></div>
+</div>
+<iframe id="my_frame" width="100%" src="http://localhost:8000/api/users/1/"></iframe>
+
+<div class="trailer">
+    <div class="spacer"></div>
+    <div class="spacer"></div>
+    <img src="/static/images/logo_black.svg" class="logo">
+    <div class="spacer"></div>
+</div>
+
 <script type="text/javascript">
     function LoadURL(){
         let url = document.getElementById("url").value
@@ -122,8 +131,6 @@ Simply fill in the form with a resource and (if necessary) an id number and clic
         document.getElementById("my_frame").src=path
     }
 </script>
-
-<div class="spacer"></div>
 
 {% endblock %}
 
