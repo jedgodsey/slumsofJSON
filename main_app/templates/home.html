@@ -3,7 +3,7 @@
 
 <div id="asterisk-hover">
     <h1>from the slums of JSON</h1>
-    <h3>A testing API inspired by the Wu-Tang Clan<a href="#disclaimer"><span id="asterisk">*</span></a></h3>
+    <h2>A testing API inspired by the Wu-Tang Clan<a href="#disclaimer"><span id="asterisk">*</span></a></h2>
 </div>
 
 <p>From the Slums of JSON is a real REST API that anyone can use for prototyping or testing.  Rather than some gibberish pseudo-latin, it features the words and wisdom of the Wu-Tang Clan.</p>
@@ -13,14 +13,9 @@
 <div class="spacer"></div>
 
 <h4>Resources</h4>
+From the Slums of JSON currently has the three resources most common to a simple blog and we are working to add more. The resources themselves are related to each other, with each user potentially having several posts and comments and each post potentially having several comments.
+<div class="spacer"></div>
 <table>
-    <thead>
-        From the Slums of JSON currently has the three resources most common to a simple blog and we are working to add more. The resources themselves are related to each other, with each user potentially having several posts and comments and each post potentiall having several comments.
-        <tr>
-        <th></th>
-        <th></th>
-        </tr>
-    </thead>
     <tbody>
         <tr>
             <td><a href="http://localhost:8000/api/posts/" class="link">&nbsp/posts&nbsp</a></td>
@@ -43,6 +38,7 @@
 <table>
     <thead>
         Feel free to use all standard http methods
+        <div class="spacer"></div>
         <tr>
             <td><h5>METHOD</h5></td>
             <td><h5>ROUTE STYLE</h5></td>
@@ -79,15 +75,41 @@
 <div class="spacer"></div>
 
 <h4>Test It Out</h4>
-
-<div class="path-parameters">
-    <input type="text" class="input" name="url" id="url" value="http://localhost:8000/api" />
-    <input type="text" class="input" name="resource" id="resource" value="users" />
-    <input type="text" class="input" name="id" id="id" value="1" />
-    <h5 class="link" onClick="LoadURL();" >&nbsp request &nbsp</h5>
+Simply fill in the form with a resource and (if necessary) an id number and click "request" to see your response.  You'll also see the resulting endpoint used, which you can plug directly into your own application.  Want to test out your own API? Simply change the url in the form to you your own and get a response in the same way.
+<div class="spacer"></div>
+<div id="request">
+    <div class="path-parameters">
+        <div>
+            <h5>METHOD</h5>
+            <select id="method" name="method">
+                <option value="GET">&nbspGET</option>
+                <option value="POST">&nbspPOST</option>
+                <option value="PUT">&nbspPUT</option>
+                <option value="PATCH">&nbspPATCH</option>
+                <option value="DELETE">&nbspDELETE</option>
+            </select>
+        </div>
+        <div class="input-box">
+            <h5>URL</h5>
+            <input type="text" class="input" name="url" id="url" value="http://localhost:8000/api" style="width:235px" />
+        </div>
+        <div class="input-box">
+            <h5>RESOURCE</h5>
+            <input type="text" class="input" name="resource" id="resource" value="users" style="width:95px" />
+        </div>
+        <div class="input-box">
+            <h5>ID</h5>
+            <input type="text" class="input" name="id" id="id" value="1" style="width:30px" />
+        </div>
+        <div class="input-button">
+            <h5>&nbsp</h5>
+            <h5 class="link" onClick="LoadURL();" >&nbsprequest&nbsp</h5>
+        </div>
+    </div>
 </div>
 <span id="endpoint"></span>
-<iframe id="my_frame" height='75%' width="100%" src="http://localhost:8000/api/users/"></iframe>       
+<div class="spacer"></div>
+<iframe id="my_frame" width="100%" src="http://localhost:8000/api/users/"></iframe>       
 <script type="text/javascript">
     function LoadURL(){
         let url = document.getElementById("url").value
