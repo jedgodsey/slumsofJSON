@@ -15,6 +15,10 @@ def home(request):
     seed(request)
     return render(request, 'home.html')
 
+def read(request):
+    print('your request: ', request.__dict__)
+    return HttpResponse('yes')
+
 # def profiles(request):
 #     response = json.dumps(list(Profile.objects.values()))
 #     return HttpResponse(response, content_type='text/json')
@@ -68,7 +72,7 @@ def comments(request):
     return JsonResponse(all_comments, safe=False)
 
 def seed(request):
-    print('all posts zero: ', all_posts[0]['profile'])
+    print('seed request: ', request.__dict__)
     Profile.objects.all().delete()
     reset(Profile)
     for profile in all_profiles:
