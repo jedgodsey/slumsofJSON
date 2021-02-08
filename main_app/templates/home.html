@@ -109,6 +109,12 @@ Fill in the form with a resource and (if necessary) an id number and click "requ
 </div>
 
 <div class="spacer"></div>
+<div id="body-text">
+    <h5 id="body-drop">JSON BODY&nbsp&nbsp</h5>
+    <p>(for POST, PUT or PATCH)<p>
+</div>
+<textarea id="body" name="body"></textarea>
+<div class="spacer"></div>
 
 <div id="frame">
     <div id="endpoint-space">
@@ -128,18 +134,32 @@ Fill in the form with a resource and (if necessary) an id number and click "requ
 
 <script type="text/javascript">
     function LoadURL(){
+        document.getElementById("response").innerText = ''
         let method = document.getElementById('method').value
         let url = document.getElementById("url").value
         let resource = document.getElementById("resource").value
         let id = document.getElementById("id").value
+        let body = document.getElementById("body").value
         let last = id ? "/" : ''
         let path = url + "/" + resource + "/" + id + last
         let endpoint = `Your Endpoint: ${path}`
         document.getElementById("endpoint").innerText = endpoint
 
-        fetch(path, {method})
-            .then(response => response.json())
-            .then(data => document.getElementById("response").innerText=JSON.stringify(data, null, 2))
+        console.log(body)
+
+        if (body) {
+            fetch(path, {
+                method: method,
+                headers: {"Content-type": 'application/json'},
+                body: body
+            })
+                .then(response => response.json())
+                .then(data => document.getElementById("response").innerText=JSON.stringify(data, null, 2))
+        } else {
+            fetch(path, {method})
+                .then(response => response.json())
+                .then(data => document.getElementById("response").innerText=JSON.stringify(data, null, 2))
+        }
     }
 </script>
 

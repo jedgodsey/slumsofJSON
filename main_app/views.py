@@ -14,11 +14,7 @@ from django.core import serializers
 def home(request):
     seed(request)
     return render(request, 'home.html')
-
-def read(request):
-    print('your request: ', request.__dict__)
-    return HttpResponse('yes')
-
+    
 # def profiles(request):
 #     response = json.dumps(list(Profile.objects.values()))
 #     return HttpResponse(response, content_type='text/json')
