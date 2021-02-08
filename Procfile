@@ -1,1 +1,1 @@
-web: gunicorn slums_project.wsgi --log-file - --preload
+web: gunicorn slums_project.wsgi --log-file -
