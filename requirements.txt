@@ -4,6 +4,7 @@ astroid==2.4.2
 blessed==1.17.12
 dj-database-url==0.5.0
 Django==3.1.5
+django-cors-headers==3.7.0
 django-heroku==0.3.1
 django-on-heroku==1.1.2
 django-picklefield==3.0.1

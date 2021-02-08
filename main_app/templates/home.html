@@ -47,27 +47,27 @@ From the Slums of JSON currently has the three resources most common to a simple
     <tbody>
         <tr>
             <td>GET</td>
-            <td>/posts</td>
+            <td>/posts/</td>
         </tr>
         <tr>
             <td>GET</td>
-            <td>/posts/1</td>
+            <td>/posts/1/</td>
         </tr>
         <tr>
             <td>POST</td>
-            <td>/posts</td>
+            <td>/posts/</td>
         </tr>
         <tr>
             <td>PUT</td>
-            <td>/posts/1</td>
+            <td>/posts/1/</td>
         </tr>
         <tr>
             <td>PATCH</td>
-            <td>/posts/1</td>
+            <td>/posts/1/</td>
         </tr>
         <tr>
             <td>DELETE</td>
-            <td>/posts/1</td>
+            <td>/posts/1/</td>
         </tr>
     </tbody>
 </table>
@@ -81,9 +81,9 @@ Fill in the form with a method, a resource and (if necessary) an id number and c
     <div class="path-parameters">
         <div>
             <h5>METHOD</h5>
-            <select id="method" name="method">
-                <option value="GET">&nbspGET</option>
+            <select id="method" name="method" onchange="toggleBody();">
                 <option value="POST">&nbspPOST</option>
+                <option value="GET">&nbspGET</option>
                 <option value="PUT">&nbspPUT</option>
                 <option value="PATCH">&nbspPATCH</option>
                 <option value="DELETE">&nbspDELETE</option>
@@ -91,7 +91,7 @@ Fill in the form with a method, a resource and (if necessary) an id number and c
         </div>
         <div class="input-box">
             <h5>URL</h5>
-            <input type="text" class="input" name="url" id="url" value="https://slumsofjson.herokuapp.com/api" style="width:235px" />
+            <input type="text" class="input" name="url" id="url" value="https://slumsofjson.herokuapp.com/api" style="width:350px" />
         </div>
         <div class="input-box">
             <h5>RESOURCE</h5>
@@ -133,6 +133,15 @@ Fill in the form with a method, a resource and (if necessary) an id number and c
 </div>
 
 <script type="text/javascript">
+    function toggleBody(){
+        let method = document.getElementById('method').value
+        if (method == "DELETE" || method == "GET") {
+            document.getElementById("body").className = "body-light"
+        } else {
+            document.getElementById("body").className = "body-dark"
+        }
+    }
+
     function LoadURL(){
         document.getElementById("response").innerText = ''
         let method = document.getElementById('method').value
@@ -144,8 +153,6 @@ Fill in the form with a method, a resource and (if necessary) an id number and c
         let path = url + "/" + resource + "/" + id + last
         let endpoint = `Your Endpoint: ${path}`
         document.getElementById("endpoint").innerText = endpoint
-
-        console.log(body)
 
         if (body) {
             fetch(path, {

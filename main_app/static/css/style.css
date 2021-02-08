@@ -241,6 +241,14 @@ select:focus, .input:focus, #body:focus {
   padding: 15px;
 }
 
+.body-light {
+  color:rgba(255, 209, 0, .5);
+}
+
+.body-dark {
+  color: black;
+}
+
 #body-text {
   display: flex;
   flex-direction: row;
