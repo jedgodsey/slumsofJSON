@@ -154,7 +154,7 @@ Fill in the form with a method, a resource and (if necessary) an id number and c
         let endpoint = `Your Endpoint: ${path}`
         document.getElementById("endpoint").innerText = endpoint
 
-        if (body) {
+        if (method == "POST" || method == "PUT" || method == "PATCH") {
             fetch(path, {
                 method: method,
                 headers: {"Content-type": 'application/json'},
