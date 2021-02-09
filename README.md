@@ -13,3 +13,6 @@ The deployed version of the application can be viewed at [slumsofjson.herokuapp.
 
 ##Run It##
 To run the application after downloading or cloning, simply install all the dependencies in requirements.txt and start the server with $ python3 manage.py runserver.
+
+##ERD##
+![This is the ERD for the project with three models: Users, Posts and Comments](/static/images/J-SON_ERD.svg "ERD")
