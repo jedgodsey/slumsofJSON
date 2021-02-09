@@ -14,52 +14,6 @@ from django.core import serializers
 def home(request):
     seed(request)
     return render(request, 'home.html')
-    
-# def users(request):
-#     response = json.dumps(list(User.objects.values()))
-#     return HttpResponse(response, content_type='text/json')
-
-# def new_user(request):
-#     add_user(json.loads(request.body))
-#     return HttpResponse(request.body, content_type='text/json')
-
-# def show_user(request, user_id):
-#     user = User.objects.get(id=user_id)
-#     found_user = {
-#         'id': user.id,
-#         'name': user.name,
-#         'user_name': user.user_name,
-#         'email': user.email
-#     }
-#     response = json.dumps(found_user)
-#     return HttpResponse(response, content_type='text/json')
-
-# def edit_user(request, user_id):
-#     found_user = User.objects.get(id=user_id)
-#     # new_user = UserForm(request.POST, request.FILES) #, instance=found_user) # what are these parameters
-#     new_user = User(json.loads(request.body))
-#     updated_user = new_user.save()
-
-#     # if new_user.is_valid():
-#     #     updated_user = new_user.save()
-#     #     # return HttpResponse(new_user, content_type='text/json')
-#     #     return HttpResponse('got here')
-#     return HttpResponse(updated_user, content_type='text/json')
-
-#########################
-# def edit_user(request, user_id):
-#     # print(json.loads(request.body))
-#     # print(request.body.decode('utf8'))
-#     found_user = User.objects.get(id=user_id)
-#     if request.method == 'POST':
-#         user_form = UserForm(request.POST, request.FILES, instance=found_user)
-#         print('user_form.errors', user_form.errors)
-#         if  user_form.is_valid():
-#             updated_user = user_form.save()
-#             return HttpResponse('step one')
-#     form = UserForm(instance=found_user)
-#     return HttpResponse('step two')
-#############################
 
 def posts(request):
     return JsonResponse(all_posts, safe=False)
@@ -108,3 +62,49 @@ def reset(table):
     with connection.cursor() as cursor:
         for sql in sequence_sql:
             cursor.execute(sql)
+
+# def users(request):
+#     response = json.dumps(list(User.objects.values()))
+#     return HttpResponse(response, content_type='text/json')
+
+# def new_user(request):
+#     add_user(json.loads(request.body))
+#     return HttpResponse(request.body, content_type='text/json')
+
+# def show_user(request, user_id):
+#     user = User.objects.get(id=user_id)
+#     found_user = {
+#         'id': user.id,
+#         'name': user.name,
+#         'user_name': user.user_name,
+#         'email': user.email
+#     }
+#     response = json.dumps(found_user)
+#     return HttpResponse(response, content_type='text/json')
+
+# def edit_user(request, user_id):
+#     found_user = User.objects.get(id=user_id)
+#     # new_user = UserForm(request.POST, request.FILES) #, instance=found_user) # what are these parameters
+#     new_user = User(json.loads(request.body))
+#     updated_user = new_user.save()
+
+#     # if new_user.is_valid():
+#     #     updated_user = new_user.save()
+#     #     # return HttpResponse(new_user, content_type='text/json')
+#     #     return HttpResponse('got here')
+#     return HttpResponse(updated_user, content_type='text/json')
+
+#########################
+# def edit_user(request, user_id):
+#     # print(json.loads(request.body))
+#     # print(request.body.decode('utf8'))
+#     found_user = User.objects.get(id=user_id)
+#     if request.method == 'POST':
+#         user_form = UserForm(request.POST, request.FILES, instance=found_user)
+#         print('user_form.errors', user_form.errors)
+#         if  user_form.is_valid():
+#             updated_user = user_form.save()
+#             return HttpResponse('step one')
+#     form = UserForm(instance=found_user)
+#     return HttpResponse('step two')
+#############################

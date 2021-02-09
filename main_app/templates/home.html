@@ -82,8 +82,8 @@ Fill in the form with a method, a resource and (if necessary) an id number and c
         <div>
             <h5>METHOD</h5>
             <select id="method" name="method" onchange="toggleBody();">
-                <option value="POST">&nbspPOST</option>
                 <option value="GET">&nbspGET</option>
+                <option value="POST">&nbspPOST</option>
                 <option value="PUT">&nbspPUT</option>
                 <option value="PATCH">&nbspPATCH</option>
                 <option value="DELETE">&nbspDELETE</option>
@@ -113,7 +113,7 @@ Fill in the form with a method, a resource and (if necessary) an id number and c
     <h5 id="body-drop">JSON BODY&nbsp&nbsp</h5>
     <p>(for POST, PUT or PATCH)<p>
 </div>
-<textarea id="body" name="body"></textarea>
+<textarea id="body" name="body" class="body-light"></textarea>
 <div class="spacer"></div>
 
 <div id="frame">
