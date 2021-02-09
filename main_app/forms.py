@@ -1,19 +1,19 @@
 # delete this page?
 # 
 from django import forms
-from .models import Profile, Post, Comment
+from .models import User, Post, Comment
 
-class ProfileForm(forms.ModelForm):
+class UserForm(forms.ModelForm):
     class Meta:      
-        model = Profile
-        fields = ("name", "profile_name", "email")
+        model = User
+        fields = ("name", "username", "email")
 
 class PostForm(forms.ModelForm):
     class Meta:
         model = Post
-        fields = ("title","body","profile")
+        fields = ("title","body","user")
 
 class CommentForm(forms.ModelForm):
     class Meta:
         model = Comment
-        fields = ("title","body","profile", "post")
+        fields = ("title","body","user", "post")

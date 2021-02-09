@@ -1,13 +1,13 @@
-from .models import Profile, Post, Comment
+from .models import User, Post, Comment
 from rest_framework import viewsets, permissions
-from .serializers import ProfileSerializer, PostSerializer, CommentSerializer
+from .serializers import UserSerializer, PostSerializer, CommentSerializer
 
-class ProfileViewSet(viewsets.ModelViewSet):
-    queryset = Profile.objects.all()
+class UserViewSet(viewsets.ModelViewSet):
+    queryset = User.objects.all()
     permission_classes = [
         permissions.AllowAny
     ]
-    serializer_class = ProfileSerializer
+    serializer_class = UserSerializer
 
 class PostViewSet(viewsets.ModelViewSet):
     queryset = Post.objects.all()
